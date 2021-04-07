@@ -25,13 +25,15 @@ SECRET_KEY = '$xbtjxi1=fz72i@9*2n3@!+8hd=ujw(p=e@&rnum@)bwbh!v*8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Myfirstapp-env.eba-kemqcmb2.us-east-2.elasticbeanstalk.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'currency_country',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,7 +61,6 @@ TEMPLATES = [
     'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [
-
             'django.contrib.auth.context_processors.auth',
             'django.template.context_processors.debug',
             'django.template.context_processors.i18n',
